@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main2"
+    android:background="@drawable/goodn8"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.saneth.goodn8.Main2Activity">
+
+    <Switch
+        android:id="@+id/swLight"
+        style="@android:style/Widget.ListView.DropDown"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="false"
+        android:splitTrack="false"
+        android:text="Light"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        tools:checked="false"
+        android:layout_below="@+id/music"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp" /><!--android:layout_toRightOf="@+id/signout"-->
+        <!--android:layout_toEndOf="@+id/signout"--><![CDATA[
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp" />
+
+    ]]><!--android:layout_alignBaseline="@+id/txtHeart"-->
+        <!--android:layout_alignBottom="@+id/txtHeart"-->
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:id="@+id/btnReport"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:background="@drawable/rounded_e_text"
+        android:text="Report"
+        android:textStyle="bold"
+        android:layout_alignBaseline="@+id/swLight"
+        android:layout_alignBottom="@+id/swLight"
+        android:layout_toRightOf="@+id/Notification"
+        android:layout_toEndOf="@+id/Notification" />
+
+
+    <Button
+        android:id="@+id/signout"
+        style="@style/Widget.AppCompat.Button.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="23dp"
+        android:layout_toEndOf="@+id/Notification"
+        android:background="@drawable/rounded_e_text"
+
+        android:text="Sign out"
+        android:layout_toRightOf="@+id/Notification" /><!--android:layout_alignRight="@+id/txtTemp"-->
+        <!--android:layout_alignEnd="@+id/txtTemp"--><![CDATA[
+        android:layout_marginRight="17dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginBottom="31dp" />
+
+    ]]>
+
+
+        <!--android:layout_alignEnd="@+id/btnReport"-->
+        <!--android:layout_alignLeft="@+id/btnReport"-->
+        <!--android:layout_alignRight="@+id/btnReport"-->
+        <!--android:layout_alignStart="@+id/btnReport"-->
+        <!--android:layout_below="@+id/txtHeart"-->
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="63dp" />
+
+
+    <Button
+        android:id="@+id/music"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:background="@drawable/rounded_e_text"
+        android:text="Music"
+        android:textStyle="bold"
+        android:layout_marginTop="71dp"
+        android:layout_below="@+id/humiditydisp"
+        android:layout_alignRight="@+id/swLight"
+        android:layout_alignEnd="@+id/swLight" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/heartLayout"
+        android:id="@+id/linearLayout">
+
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/tempdisp"
+            android:layout_alignEnd="@+id/btnSettings"
+            android:layout_alignParentTop="true"
+            android:layout_alignRight="@+id/btnSettings"
+            app:srcCompat="@drawable/rsz_thermometer" />
+
+        <TextView
+            android:id="@+id/tempdisp"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_above="@+id/music"
+            android:layout_marginBottom="40dp"
+
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:text="Temprature Display"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/heartLayout"
+
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="18dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="34dp"
+            android:layout_height="33dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+
+            app:srcCompat="@drawable/heartbe"
+            android:layout_above="@+id/heartdisp" />
+
+
+        <TextView
+            android:id="@+id/heartdisp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/signout"
+
+            android:layout_alignStart="@+id/signout"
+            android:layout_marginLeft="22dp"
+
+            android:layout_marginStart="22dp"
+            android:text="Heart Display"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnSettings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:background="@drawable/rounded_e_text"
+        android:text="Settings"
+        android:textStyle="bold"
+        android:layout_alignBaseline="@+id/swLight"
+        android:layout_alignBottom="@+id/swLight"
+        android:layout_toLeftOf="@+id/Notification"
+        android:layout_toStartOf="@+id/Notification"
+        android:layout_marginRight="21dp"
+        android:layout_marginEnd="21dp" />
+
+    <CheckBox
+        android:id="@+id/Notification"
+        style="@android:style/Widget.Material.CompoundButton.CheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnSettings"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp"
+        android:duplicateParentState="false"
+        android:text="Notification"
+        android:textAllCaps="true"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:buttonTint="@android:color/background_light" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/rsz_humidity"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/linearLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/humiditydisp"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+
+        android:text="Humidity Disp"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="25dp"
+        android:layout_marginStart="25dp"
+        android:layout_alignTop="@+id/imageView5"
+        android:layout_toRightOf="@+id/imageView5"
+        android:layout_toEndOf="@+id/imageView5" />
+
+    <TextView
+        android:id="@+id/textuser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignBottom="@+id/signout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/signout"
+
+        android:text="email"
+        android:textAllCaps="false"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textColor="?attr/colorAccent"
+        android:textStyle="bold"
+        android:lineSpacingMultiplier="5"
+
+        android:typeface="monospace" />
+
+    <!--android:layout_alignRight="@+id/swLight"-->
+        <!--android:layout_alignEnd="@+id/swLight" />-->
+
+</RelativeLayout>
